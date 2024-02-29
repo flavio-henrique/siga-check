@@ -1,0 +1,650 @@
+{
+  "id": "cc39223e-f02e-4011-b3e6-66ef8d2a8d34",
+  "version": "2.0",
+  "name": "Siga-en",
+  "url": "https://siga.marcacaodeatendimento.pt",
+  "tests": [{
+    "id": "5f2450d5-f646-44b5-b2d3-599671324a4c",
+    "name": "checkAvailabity",
+    "commands": [{
+      "id": "dca97e46-907e-4fdb-9c72-47f6c5ef339c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1728x994",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65dce062-5864-4b43-8425-dcc0c4cf2e5e",
+      "comment": "",
+      "command": "open",
+      "target": "/Marcacao/MarcacaoInicio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4559124-a245-4081-a116-4cae519ea8c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.div-button > .btn",
+      "targets": [
+        ["css=.div-button > .btn", "css:finder"],
+        ["xpath=(//input[@value='Start'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41281437-9c63-45f5-8452-20dddda654c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=176",
+      "targets": [
+        ["id=176", "id"],
+        ["css=#\\31 76", "css:finder"],
+        ["xpath=//button[@id='176']", "xpath:attributes"],
+        ["xpath=//div[@id='listaEntidades']/div[6]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8540bc9f-6168-453c-adb9-9b14ea7c825f",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdCategoria",
+      "targets": [
+        ["id=IdCategoria", "id"],
+        ["name=IdCategoria", "name"],
+        ["css=#IdCategoria", "css:finder"],
+        ["xpath=//select[@id='IdCategoria']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a Theme\nCitizen\nCompanies and other Collective Persons\nLand and Property\nNationality\nNotarial Acts\nVehicles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9de1765c-8aa7-47d1-9b7d-2c689f2f1d9b",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdCategoria",
+      "targets": [],
+      "value": "label=Citizen"
+    }, {
+      "id": "46e192f9-568c-4536-a6d0-7ac89d211886",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdSubcategoria",
+      "targets": [
+        ["id=IdSubcategoria", "id"],
+        ["name=IdSubcategoria", "name"],
+        ["css=#IdSubcategoria", "css:finder"],
+        ["xpath=//select[@id='IdSubcategoria']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e58d802-b9d3-47f2-83f7-5c59c2c6242b",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdSubcategoria",
+      "targets": [],
+      "value": "label=Residence permit"
+    }, {
+      "id": "490c6c0a-f4de-4502-a277-bc3fca09e803",
+      "comment": "",
+      "command": "click",
+      "target": "css=.set-date-button > span",
+      "targets": [
+        ["css=.set-date-button > span", "css:finder"],
+        ["xpath=//li[@id='liProximoButton']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "958741f1-9160-47b1-bcd6-d5873a0649a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d147693-80ea-421a-b297-24ce49bb3f39",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=AVEIRO"
+    }, {
+      "id": "e9cf20ab-70f3-4179-8e24-827510af5cc5",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdLocalidade",
+      "targets": [
+        ["id=IdLocalidade", "id"],
+        ["name=IdLocalidade", "name"],
+        ["css=#IdLocalidade", "css:finder"],
+        ["xpath=//select[@id='IdLocalidade']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a2b5e80-5f61-4e7d-a0b6-d7470288b907",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdLocalAtendimento",
+      "targets": [
+        ["id=IdLocalAtendimento", "id"],
+        ["name=IdLocalAtendimento", "name"],
+        ["css=#IdLocalAtendimento", "css:finder"],
+        ["xpath=//select[@id='IdLocalAtendimento']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Loja de Cidadão Aveiro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ea16cb9-da98-4ebf-875b-5771c58eb39f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Next→",
+      "targets": [
+        ["linkText=Next→", "linkText"],
+        ["css=.set-date-button", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#proximoButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liProximoButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Next→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d7c0782-8ba9-47ef-a249-c21b57dbdd21",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-12 > h5",
+      "targets": [
+        ["css=.col-md-12 > h5", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'There are no appointment shedules available for the selected criteria.')]", "xpath:innerText"]
+      ],
+      "value": "There are no appointment shedules available for the selected criteria."
+    }, {
+      "id": "bc09aa1f-d64a-4db4-9efb-ad260076d570",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=←Previous",
+      "targets": [
+        ["linkText=←Previous", "linkText"],
+        ["css=.m-left", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#voltarButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liVoltarButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'←Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57549914-57fa-455a-a3ef-7395254b2d82",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "284f4621-3e22-49f2-8291-14c958458a0c",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=COIMBRA"
+    }, {
+      "id": "abeffb37-ce30-4692-9c24-302582c5a4e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdLocalidade",
+      "targets": [
+        ["id=IdLocalidade", "id"],
+        ["name=IdLocalidade", "name"],
+        ["css=#IdLocalidade", "css:finder"],
+        ["xpath=//select[@id='IdLocalidade']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "623c915a-568f-4176-9b12-2cb4a970fe05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.set-date-button > span",
+      "targets": [
+        ["css=.set-date-button > span", "css:finder"],
+        ["xpath=//li[@id='liProximoButton']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68358441-ee40-48a0-9fb4-6f6b36177961",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-12 > h5",
+      "targets": [
+        ["css=.col-md-12 > h5", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'There are no appointment shedules available for the selected criteria.')]", "xpath:innerText"]
+      ],
+      "value": "There are no appointment shedules available for the selected criteria."
+    }, {
+      "id": "1d7b59d5-0a19-44d9-aa71-087eb4330ac3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=←Previous",
+      "targets": [
+        ["linkText=←Previous", "linkText"],
+        ["css=.m-left", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#voltarButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liVoltarButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'←Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1fd6b56-89fe-470f-bf8f-3159054302d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "415bb0de-6027-46d5-8704-652764a2cdc5",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=FARO"
+    }, {
+      "id": "9d750e03-1b6e-4940-806b-8fa04d68b9c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdLocalidade",
+      "targets": [
+        ["id=IdLocalidade", "id"],
+        ["name=IdLocalidade", "name"],
+        ["css=#IdLocalidade", "css:finder"],
+        ["xpath=//select[@id='IdLocalidade']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cfd6826-53a5-441f-8ceb-db2568e9f6e8",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdLocalidade",
+      "targets": [],
+      "value": "label=ALL PLACES"
+    }, {
+      "id": "c931634d-3428-4a98-980e-21f798b63d33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Next→",
+      "targets": [
+        ["linkText=Next→", "linkText"],
+        ["css=.set-date-button", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#proximoButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liProximoButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Next→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "371f3b7d-5380-43e4-ad24-c1d510cb55fd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-12 > h5",
+      "targets": [
+        ["css=.col-md-12 > h5", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'There are no appointment shedules available for the selected criteria.')]", "xpath:innerText"]
+      ],
+      "value": "There are no appointment shedules available for the selected criteria."
+    }, {
+      "id": "c7c016e3-8619-4124-bcb8-2255b708322c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=←Previous",
+      "targets": [
+        ["linkText=←Previous", "linkText"],
+        ["css=.m-left", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#voltarButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liVoltarButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'←Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a089cb-3833-4217-907c-b658d927d9f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e26669b1-cfe7-4439-b42b-92d3aafcfa2e",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=ILHA DO FAIAL"
+    }, {
+      "id": "d9972915-0004-4763-ae0b-cb59c9b6263f",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "253a78bb-47cd-4a46-bec5-56bb6ce4977e",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=LEIRIA"
+    }, {
+      "id": "deb86766-86cc-49dd-a333-c27bd70e4ccf",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdLocalidade",
+      "targets": [
+        ["id=IdLocalidade", "id"],
+        ["name=IdLocalidade", "name"],
+        ["css=#IdLocalidade", "css:finder"],
+        ["xpath=//select[@id='IdLocalidade']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc116852-71d9-49df-a4f5-7aef3df24419",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdLocalidade",
+      "targets": [],
+      "value": "label=ALL PLACES"
+    }, {
+      "id": "657082af-7d95-40e6-b981-0f79a2de46dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Next→",
+      "targets": [
+        ["linkText=Next→", "linkText"],
+        ["css=.set-date-button", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#proximoButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liProximoButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Next→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "479072e2-2077-458a-9553-94d4b4fa036d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-12 > h5",
+      "targets": [
+        ["css=.col-md-12 > h5", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'There are no appointment shedules available for the selected criteria.')]", "xpath:innerText"]
+      ],
+      "value": "There are no appointment shedules available for the selected criteria."
+    }, {
+      "id": "340670f4-c3ff-4c34-a452-9095bca0344a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=←Previous",
+      "targets": [
+        ["linkText=←Previous", "linkText"],
+        ["css=.m-left", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#voltarButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liVoltarButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'←Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90eac016-d254-4eb4-a601-9a8259f7c915",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "420a2d1c-33b9-4454-81c9-050dba75041d",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=LISBOA"
+    }, {
+      "id": "7429c80c-0434-4185-abf8-5637ed7034b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdLocalidade",
+      "targets": [
+        ["id=IdLocalidade", "id"],
+        ["name=IdLocalidade", "name"],
+        ["css=#IdLocalidade", "css:finder"],
+        ["xpath=//select[@id='IdLocalidade']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "222bed79-1b4b-4a2e-8781-a39436f6b227",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdLocalidade",
+      "targets": [],
+      "value": "label=ALL PLACES"
+    }, {
+      "id": "f422fefc-6916-41ab-ab6e-fe6d651f4716",
+      "comment": "",
+      "command": "click",
+      "target": "css=.set-date-button > span",
+      "targets": [
+        ["css=.set-date-button > span", "css:finder"],
+        ["xpath=//li[@id='liProximoButton']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af3a5f09-838a-40c2-baba-ffb5c3099100",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-12 > h5",
+      "targets": [
+        ["css=.col-md-12 > h5", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'There are no appointment shedules available for the selected criteria.')]", "xpath:innerText"]
+      ],
+      "value": "There are no appointment shedules available for the selected criteria."
+    }, {
+      "id": "9e0a6768-94d7-4813-8894-565db3fa965b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=←Previous",
+      "targets": [
+        ["linkText=←Previous", "linkText"],
+        ["css=.m-left", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#voltarButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liVoltarButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'←Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43133e82-1339-4403-b390-0024a17a58e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3520504-0b38-44c3-8e41-68c92809a275",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "417ab8aa-2582-4759-b690-14b065e9f076",
+      "comment": "",
+      "command": "click",
+      "target": "id=IdDistrito",
+      "targets": [
+        ["id=IdDistrito", "id"],
+        ["name=IdDistrito", "name"],
+        ["css=#IdDistrito", "css:finder"],
+        ["xpath=//select[@id='IdDistrito']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select a District\nAVEIRO\nBRAGANÇA\nCASTELO BRANCO\nCOIMBRA\nFARO\nILHA DO FAIAL\nLEIRIA\nLISBOA\nSANTARÉM\nVILA REAL\nVISEU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4d8866b-873f-4270-8d6a-9dc5b9240578",
+      "comment": "",
+      "command": "select",
+      "target": "id=IdDistrito",
+      "targets": [],
+      "value": "label=VISEU"
+    }, {
+      "id": "77e8cea0-3caf-45d5-8c45-9d8e96a7d79b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Next→",
+      "targets": [
+        ["linkText=Next→", "linkText"],
+        ["css=.set-date-button", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#proximoButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liProximoButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Next→')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c2cba0-7734-4f07-9754-e18b0d113013",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-12 > h5",
+      "targets": [
+        ["css=.col-md-12 > h5", "css:finder"],
+        ["xpath=//form[@id='form']/div/div/div/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'There are no appointment shedules available for the selected criteria.')]", "xpath:innerText"]
+      ],
+      "value": "There are no appointment shedules available for the selected criteria."
+    }, {
+      "id": "a11d1694-4042-4693-982f-5ab8034f108a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=←Previous",
+      "targets": [
+        ["linkText=←Previous", "linkText"],
+        ["css=.m-left", "css:finder"],
+        ["xpath=//a[@onclick=\"javascript: $('#voltarButton').click();\"]", "xpath:attributes"],
+        ["xpath=//li[@id='liVoltarButton']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'←Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5fa5857-47e7-4403-ae08-c80f58d1608c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5f2450d5-f646-44b5-b2d3-599671324a4c"]
+  }],
+  "urls": ["https://siga.marcacaodeatendimento.pt/"],
+  "plugins": []
+}
